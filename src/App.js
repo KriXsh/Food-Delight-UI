@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense, lazy } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Header from './components/Layout/Header';
+import Footer from './components/Layout/Footer';
+import AuthProvider from './context/AuthContext';
+import CartProvider from './context/CartContext';
+import ProfileProvider from './context/ProfileContext';
+import ErrorBoundary from './components/ErrorBoundary';
+import './styles/index.css';
+import './styles/components.css';
 
-function App() {
+const AppRoutes = lazy(() => import('./routes')); // Lazy load the routes
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router> {/* Router should wrap the entire app */}
+      <AuthProvider>
+        <CartProvider>
+          <ProfileProvider>
+            <ErrorBoundary>
+              <Suspense fallback={<div>Loading...</div>}>
+                <Header />
+                <div className="main-content">
+                  <AppRoutes /> {/* Using the lazy-loaded routes */}
+                </div>
+                <Footer />
+              </Suspense>
+            </ErrorBoundary>
+          </ProfileProvider>
+        </CartProvider>
+      </AuthProvider>
+    </Router>
   );
-}
+};
 
 export default App;

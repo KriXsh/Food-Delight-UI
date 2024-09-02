@@ -1,0 +1,475 @@
+/* Header and Footer */
+header, footer {
+  background-color: #282c34;
+  padding: 20px 0;
+  color: white;
+  text-align: center;
+}
+
+header nav a {
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #ff6347;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #ff6347;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #ff4500;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: #ddd;
+  color: #333;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #bbb;
+  transform: translateY(-2px);
+}
+
+/* Auth Form */
+.auth-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.auth-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.auth-container form .form-group {
+  margin-bottom: 20px;
+}
+
+.auth-container form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.auth-container form .form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.auth-container form button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Landing Page */
+.landing-page {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.landing-page h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.restaurant-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.restaurant-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-5px);
+}
+
+.restaurant-card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.restaurant-card .card-content {
+  padding: 15px;
+}
+
+/* Checkout */
+.checkout-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.order-summary {
+  margin-bottom: 30px;
+}
+
+.order-summary h3 {
+  margin-bottom: 15px;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.order-total {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Profile */
+.user-profile, .edit-profile {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.user-profile h2, .edit-profile h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.user-profile p, .edit-profile p {
+  margin-bottom: 15px;
+}
+
+/* Cart */
+.cart {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cart-items {
+  margin-bottom: 20px;
+}
+
+.cart-total {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.cart-item-details {
+  flex-grow: 1;
+}
+
+.btn-remove {
+  background-color: #ff6347;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-remove:hover {
+  background-color: #ff4500;
+  transform: translateY(-2px);
+}
+
+/* Menu */
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.menu-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.menu-item-details {
+  flex-grow: 1;
+}
+
+.menu-item-actions {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item-actions span {
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.menu-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Restaurant */
+.restaurant-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  overflow: hidden;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-5px);
+}
+
+.restaurant-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.restaurant-card-details {
+  padding: 15px;
+}
+
+.restaurant-card h4 {
+  margin-bottom: 10px;
+}
+
+.restaurant-card p {
+  margin-bottom: 5px;
+}
+
+.restaurant-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.restaurant-filter label {
+  font-weight: bold;
+}
+
+.restaurant-filter input, .restaurant-filter select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* UI */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #999;
+}
+
+.modal-close:hover {
+  color: #ff4500;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.address-group {
+  display: flex;
+  align-items: center;
+}
+
+.address-group input {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+button[type="button"] {
+  background-color: #dc3545;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+button[type="button"]:hover {
+  background-color: #c82333;
+}
+
+.error {
+  color: red;
+  margin-bottom: 20px;
+}
+
+
+.error-boundary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  text-align: center;
+  padding: 20px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 8px;
+}
+
+.error-boundary h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.error-boundary p {
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header nav a, .btn-primary, .btn-secondary {
+    margin-bottom: 10px;
+  }
+
+  .auth-container, .checkout-container, .user-profile, .edit-profile {
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+  }
+
+  .restaurant-list, .menu-list {
+    grid-template-columns: 1fr;
+  }
+
+  .restaurant-card, .menu-item {
+    width: 100%;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+
+  .landing-page h2 {
+    font-size: 2em;
+  }
+
+  .restaurant-card img, .menu-item img {
+    height: 100px;
+  }
+
+  .cart {
+    padding: 15px;
+  }
+
+  .order-summary h3 {
+    font-size: 1.5em;
+  }
+}
